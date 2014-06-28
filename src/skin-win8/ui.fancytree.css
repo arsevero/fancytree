@@ -504,7 +504,7 @@ span.fancytree-selected span.fancytree-title {
 span.fancytree-node span.fancytree-selected span.fancytree-title {
   font-style: italic;
 }
-span.fancytree-node span.fancytree-title:hover {
+span.fancytree-node:hover span.fancytree-title {
   background-color: #eff9fe;
   border-color: #70c0e7;
 }
