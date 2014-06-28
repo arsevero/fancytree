@@ -1,14 +1,32 @@
-# 2.1.0 / Unreleased
+# 2.2.1 / Unreleased
+
+
+# wide2 branch / Unreleased
+  * [Fixed] #246 Gaps when filtering in hide mode (patch by @lefunque)
+
+
+# 2.2.0 / 2014-06-28
+  * [Added] Option dnd.focusOnClick sets focus to tree widget, even when dragging 
+    is enabled
+  * [Added] node.info()
+  * [Improved] #245 tree.generateInput() now returns data using PHPs array
+    convention, i.e. by appending brackets to the name: 'ft_1[]'.
+  * [Fixed] #250: Children lazy empty nodes remain checked when parent is 
+    unchecked with hierarchical multi-selection
+  * [Fixed] #272 Navigation in filtered trees
+
+
+# 2.1.0 / 2014-05-29
   * [Added] #210: [ext-persist] optionally store information in sessionStorage or localStorage
   * [Added] #64 [ext-filter] filterBranches() will restrict display to sub-trees
   * [Added] New options 'scrollParent' and 'scrollOfs' are evaluated by node.scrollIntoView()
+    (which is also called on expand). This allows autoScroll to work with 
+    [ext-table]: set scrollParent to `window` or a wrapper DIV with  overflow: auto
   * [Added] [ext-wide] use 100% wide selection bar (experimental)
   * [Added] $.ui.fancytree.debounce()
   * [Improved] [ext-columnview] css
   * [Improved] skin-win8 now includes the loading.gif as inline CSS for faster response
   * [Improved] Add 'fancytree-icon' class to icon IMG
-    (which is also called on expand). This allows autoScroll to work with 
-    [ext-table]: set scrollParent to `window` or a wrapper DIV with  overflow: auto
   * [Improved] css v-align for checkboxes and icons
   * [Fixed] #217: persistence when node keys are numeric
   * [Fixed] #228: html in node title prevents click
