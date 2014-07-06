@@ -1,4 +1,10 @@
-# 2.2.1 / Unreleased
+# 2.3.0 / Unreleased
+  * [CHANGE] renamed (undocumented) event 'loaderror' to 'loadError'
+  * [Added] postProcess now allows to signal error conditions (so it becomes easy to handle custom ajay response formats)
+  * [Added] node.setStatus()
+  * [Improved] loadError allows to return `false` to prevent default handling
+  * [Fixed] #258 Fix moveTo when moving a node to same parent
+  * [Fixed] #257 Glyph expander sometimes disappears
 
 
 # wide2 branch / Unreleased
