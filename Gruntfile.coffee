@@ -121,12 +121,12 @@ module.exports = (grunt) ->
     connect:
         forever:
             options:
-                port: 8080
+                port: 8001
                 base: "./"
                 keepalive: true
         dev: # pass on, so subsequent tastks (like watch) can start
             options:
-                port: 8080
+                port: 8001
                 base: "./"
                 keepalive: false
         sauce:

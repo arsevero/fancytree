@@ -298,7 +298,8 @@ $(function(){
 				  {name: "Win7", value: "win7", href: "skin-win7/ui.fancytree.css"},
 				  {name: "Win8", value: "win8", href: "skin-win8/ui.fancytree.css"},
 				  {name: "Win8 xxl", value: "win8xxl", href: "skin-win8-xxl/ui.fancytree.css"},
-				  {name: "Lion", value: "lion", href: "skin-lion/ui.fancytree.css"}
+				  {name: "Lion", value: "lion", href: "skin-lion/ui.fancytree.css"},
+                  {name: "FenixEdu", value: "fenixedu", href: "skin-fenixedu/ui.fancytree.css"}
 				  ]
 //		init: "lion"
 	})
