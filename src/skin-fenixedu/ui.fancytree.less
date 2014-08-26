@@ -28,6 +28,35 @@
 @fancy-icon-margin-left: 5px;
 
 
+/*------------------------------------------------------------------------------
+ * Container and UL / LI
+ *----------------------------------------------------------------------------*/
+
+ul.fancytree-container {
+	font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px; // font size should not be too big
+	font-weight: 300;
+	line-height: 1.428571429;
+	color: #444;
+	padding: 0;
+	border: none;
+	ul {
+		padding: 0 0 0 18px;
+		margin: 0;
+	}
+	&:focus {
+		outline: none; // Prevent focus frame
+	}
+}
+
+// Style, when control is disabled
+.ui-fancytree-disabled ul.fancytree-container {
+	opacity: 0.5;
+//	filter: alpha(opacity=50); // Yields a css warning 
+	background-color: silver;
+}
+
+
 /*******************************************************************************
  * Node titles
  */
@@ -50,10 +79,15 @@ span.fancytree-selected span.fancytree-title {
 	color: #3399ff;
 	background-color: none;
 }
+span.fancytree-node.fancytree-error span.fancytree-title {
+	color: #bb2222;
+}
+
 
 /*******************************************************************************
  * 'table' extension
  */
+
 table.fancytree-ext-table {
 	border-collapse: collapse;
 	tbody {

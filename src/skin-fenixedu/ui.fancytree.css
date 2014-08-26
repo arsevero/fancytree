@@ -445,6 +445,29 @@ ul.fancytree-ext-wide span.fancytree-node span.fancytree-title {
  *
  * This section is automatically generated from the `ui-fancytree.less` template.
  ******************************************************************************/
+/*------------------------------------------------------------------------------
+ * Container and UL / LI
+ *----------------------------------------------------------------------------*/
+ul.fancytree-container {
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.428571429;
+  color: #444;
+  padding: 0;
+  border: none;
+}
+ul.fancytree-container ul {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+ul.fancytree-container:focus {
+  outline: none;
+}
+.ui-fancytree-disabled ul.fancytree-container {
+  opacity: 0.5;
+  background-color: silver;
+}
 /*******************************************************************************
  * Node titles
  */
@@ -463,6 +486,9 @@ span.fancytree-active span.fancytree-title {
 .fancytree-treefocus span.fancytree-active span.fancytree-title {
   color: #3399ff;
   background-color: none;
+}
+span.fancytree-node.fancytree-error span.fancytree-title {
+  color: #bb2222;
 }
 /*******************************************************************************
  * 'table' extension
