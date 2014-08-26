@@ -1,15 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic);
 /*!
- * Fancytree "Lion" skin.
+ * Fancytree "FenixEdu" skin.
  *
  * DON'T EDIT THE CSS FILE DIRECTLY, since it is automatically generated from
  * the LESS templates.
  */
-/*
- Lion colors:
-	gray highlight bar: #D4D4D4
-	blue highlight-bar and -border #3875D7
-
-*/
 /*******************************************************************************
  * Common Styles for Fancytree Skins.
  *
@@ -99,7 +94,7 @@ span.fancytree-custom-icon {
 img.fancytree-icon {
   width: 16px;
   height: 16px;
-  margin-left: 3px;
+  margin-left: 5px;
   margin-top: 1px;
   vertical-align: top;
   border-style: none;
@@ -186,7 +181,7 @@ span.fancytree-expander {
  * Checkbox icon
  *----------------------------------------------------------------------------*/
 span.fancytree-checkbox {
-  margin-left: 3px;
+  margin-left: 5px;
   background-position: 0px -32px;
 }
 span.fancytree-checkbox:hover {
@@ -237,7 +232,7 @@ span.fancytree-checkbox:hover {
  * 2nd character (optional): 'f': folder
  *----------------------------------------------------------------------------*/
 span.fancytree-icon {
-  margin-left: 3px;
+  margin-left: 5px;
   background-position: 0px 0px;
 }
 /* Documents */
@@ -458,19 +453,16 @@ span.fancytree-title {
   border-radius: 0;
 }
 span.fancytree-focused span.fancytree-title {
-  outline: 1px dotted black;
+  color: #3399ff;
 }
 span.fancytree-selected span.fancytree-title,
 span.fancytree-active span.fancytree-title {
-  background-color: #D4D4D4;
-}
-span.fancytree-selected span.fancytree-title {
-  font-style: italic;
+  background-color: transparent;
 }
 .fancytree-treefocus span.fancytree-selected span.fancytree-title,
 .fancytree-treefocus span.fancytree-active span.fancytree-title {
-  color: white;
-  background-color: #3875D7;
+  color: #3399ff;
+  background-color: none;
 }
 /*******************************************************************************
  * 'table' extension

@@ -1,18 +1,14 @@
  /*!
- * Fancytree "Lion" skin.
+ * Fancytree "FenixEdu" skin.
  *
  * DON'T EDIT THE CSS FILE DIRECTLY, since it is automatically generated from
  * the LESS templates.
  */
 
-/*
- Lion colors:
-	gray highlight bar: #D4D4D4
-	blue highlight-bar and -border #3875D7
 
-*/
 // Import common styles
 @import "../skin-common.less";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic);
 
 
 /*******************************************************************************
@@ -29,7 +25,8 @@
 @fancy-icon-width: 16px;
 @fancy-icon-height: 16px;
 @fancy-line-height: 16px;
-@fancy-icon-margin-left: 3px;
+@fancy-icon-margin-left: 5px;
+
 
 /*******************************************************************************
  * Node titles
@@ -39,19 +36,19 @@ span.fancytree-title {
 	border-radius: 0;
 }
 span.fancytree-focused span.fancytree-title {
-	outline: 1px dotted black;
+	color: #3399ff;
 }
 span.fancytree-selected span.fancytree-title,
 span.fancytree-active span.fancytree-title {
-	background-color: #D4D4D4; // gray
+	background-color: transparent;
 }
 span.fancytree-selected span.fancytree-title {
-	font-style: italic;
+	
 }
 .fancytree-treefocus span.fancytree-selected span.fancytree-title,
 .fancytree-treefocus span.fancytree-active span.fancytree-title {
-	color: white;
-	background-color: #3875D7; // blue
+	color: #3399ff;
+	background-color: none;
 }
 
 /*******************************************************************************
