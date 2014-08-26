@@ -490,6 +490,23 @@ span.fancytree-active span.fancytree-title {
 span.fancytree-node.fancytree-error span.fancytree-title {
   color: #bb2222;
 }
+/*------------------------------------------------------------------------------
+ * Drag'n'drop support
+ *----------------------------------------------------------------------------*/
+div.fancytree-drag-helper.fancytree-drop-reject {
+  border-color: #bb2222;
+}
+/*** Source node while dragging ***********************************************/
+span.fancytree-drag-source {
+  background-color: #f3f3f3;
+}
+span.fancytree-drag-source span.fancytree.title {
+  color: gray;
+}
+/*** Target node while dragging cursor is over it *****************************/
+span.fancytree-drop-target.fancytree-drop-accept a {
+  background-color: #3399ff !important;
+}
 /*******************************************************************************
  * 'table' extension
  */
@@ -497,23 +514,23 @@ table.fancytree-ext-table {
   border-collapse: collapse;
 }
 table.fancytree-ext-table tbody tr.fancytree-focused {
-  background-color: #99DEFD;
+  background-color: #f3f3f3;
 }
 table.fancytree-ext-table tbody tr.fancytree-active {
-  background-color: royalblue;
+  background-color: #ddd;
 }
 table.fancytree-ext-table tbody tr.fancytree-selected {
-  background-color: #99DEFD;
+  background-color: #f3f3f3;
 }
 /*******************************************************************************
  * 'columnview' extension
  */
 table.fancytree-ext-columnview tbody tr td {
-  border: 1px solid gray;
+  border: 1px solid #f3f3f3;
 }
 table.fancytree-ext-columnview span.fancytree-node.fancytree-expanded {
-  background-color: #ccc;
+  background-color: #f3f3f3;
 }
 table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
-  background-color: royalblue;
+  background-color: #ddd;
 }
