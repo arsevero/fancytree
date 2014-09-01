@@ -453,7 +453,7 @@ ul.fancytree-container {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.428571429;
-  color: #444;
+  color: #555;
   padding: 0;
   border: none;
 }
@@ -466,7 +466,7 @@ ul.fancytree-container:focus {
 }
 .ui-fancytree-disabled ul.fancytree-container {
   opacity: 0.5;
-  background-color: silver;
+  background-color: #f3f3f3;
 }
 /*******************************************************************************
  * Node titles
@@ -498,14 +498,14 @@ div.fancytree-drag-helper.fancytree-drop-reject {
 }
 /*** Source node while dragging ***********************************************/
 span.fancytree-drag-source {
-  background-color: #f3f3f3;
+  background-color: none!important;
 }
 span.fancytree-drag-source span.fancytree.title {
-  color: gray;
+  background-color: #f3f3f3;
 }
 /*** Target node while dragging cursor is over it *****************************/
-span.fancytree-drop-target.fancytree-drop-accept a {
-  background-color: #3399ff !important;
+span.fancytree-drop-target .fancytree-title {
+  background-color: #f3f3f3 !important;
 }
 /*******************************************************************************
  * 'table' extension
@@ -517,7 +517,7 @@ table.fancytree-ext-table tbody tr.fancytree-focused {
   background-color: #f3f3f3;
 }
 table.fancytree-ext-table tbody tr.fancytree-active {
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 table.fancytree-ext-table tbody tr.fancytree-selected {
   background-color: #f3f3f3;
@@ -532,5 +532,5 @@ table.fancytree-ext-columnview span.fancytree-node.fancytree-expanded {
   background-color: #f3f3f3;
 }
 table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
-  background-color: #ddd;
+  background-color: #dddddd;
 }

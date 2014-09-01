@@ -28,6 +28,21 @@
 @fancy-icon-margin-left: 5px;
 
 
+//FenixEdu General Colors Variables
+
+@gray-darker: #444;
+@gray-dark:              #888;
+@gray:                   #bbb;
+@gray-light:             #ddd;
+@gray-lighter:           #f3f3f3;
+
+@brand-primary:         #3399ff;
+@brand-success:         #9ac338;
+@brand-info:            #5bc0de;
+@brand-warning:         #ff9900;
+@brand-danger:          #bb2222;
+
+
 /*------------------------------------------------------------------------------
  * Container and UL / LI
  *----------------------------------------------------------------------------*/
@@ -37,7 +52,7 @@ ul.fancytree-container {
 	font-size: 13px; // font size should not be too big
 	font-weight: 300;
 	line-height: 1.428571429;
-	color: #444;
+	color: #555;
 	padding: 0;
 	border: none;
 	ul {
@@ -53,7 +68,7 @@ ul.fancytree-container {
 .ui-fancytree-disabled ul.fancytree-container {
 	opacity: 0.5;
 //	filter: alpha(opacity=50); // Yields a css warning 
-	background-color: silver;
+	background-color: @gray-lighter;
 }
 
 
@@ -65,7 +80,7 @@ span.fancytree-title {
 	border-radius: 0;
 }
 span.fancytree-focused span.fancytree-title {
-	color: #3399ff;
+	color: @brand-primary;
 }
 span.fancytree-selected span.fancytree-title,
 span.fancytree-active span.fancytree-title {
@@ -76,11 +91,11 @@ span.fancytree-selected span.fancytree-title {
 }
 .fancytree-treefocus span.fancytree-selected span.fancytree-title,
 .fancytree-treefocus span.fancytree-active span.fancytree-title {
-	color: #3399ff;
+	color: @brand-primary;
 	background-color: none;
 }
 span.fancytree-node.fancytree-error span.fancytree-title {
-	color: #bb2222;
+	color: @brand-danger;
 }
 
 
@@ -89,24 +104,24 @@ span.fancytree-node.fancytree-error span.fancytree-title {
  *----------------------------------------------------------------------------*/
 
 div.fancytree-drag-helper.fancytree-drop-reject {
-	border-color: #bb2222;
+	border-color: @brand-danger;
 }
 
 /*** Source node while dragging ***********************************************/
 
 span.fancytree-drag-source {
-	background-color: #f3f3f3;
+	background-color: none!important;
 	span.fancytree.title {
-		color: gray;
+		background-color: @gray-lighter;
 	}
 }
 
 /*** Target node while dragging cursor is over it *****************************/
 
-span.fancytree-drop-target {
-	&.fancytree-drop-accept a {
-		background-color: #3399ff !important;
-	}
+span.fancytree-drop-target .fancytree-title {
+	//&.fancytree-drop-accept a {
+		background-color: @gray-lighter !important;
+	//}
 }
 
 
@@ -118,13 +133,13 @@ table.fancytree-ext-table {
 	border-collapse: collapse;
 	tbody {
 	    tr.fancytree-focused {
-			background-color: #f3f3f3;
+			background-color: @gray-lighter;
 		}
 	    tr.fancytree-active {
-			background-color: #ddd;
+			background-color: @gray-light;
 		}
 	    tr.fancytree-selected {
-			background-color: #f3f3f3;
+			background-color: @gray-lighter;
 		}
 	}
 }
@@ -134,12 +149,12 @@ table.fancytree-ext-table {
  */
 
 table.fancytree-ext-columnview tbody tr td {
-	border: 1px solid #f3f3f3;
+	border: 1px solid @gray-lighter;
 }
 table.fancytree-ext-columnview span.fancytree-node.fancytree-expanded {
-	background-color: #f3f3f3;
+	background-color: @gray-lighter;
 }
 table.fancytree-ext-columnview span.fancytree-node.fancytree-active {
-	background-color: #ddd;
+	background-color: @gray-light;
 }
 
